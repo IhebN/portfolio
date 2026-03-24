@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CV Iheb Nabli - Data Analyst & Business Intelligence</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Calibri, Arial, sans-serif; font-size: 10.5pt; line-height: 1.25; color: #333; background: white; }
+        .container { max-width: 8.5in; margin: 0 auto; padding: 0.25in; background: white; }
+        header { display: flex; justify-content: flex-start; align-items: center; border-bottom: 2pt solid #000; margin-bottom: 0.08in; padding-bottom: 0.04in; gap: 0.08in; }
+        .photo { 
+            width: 0.95in; 
+            height: 0.95in; 
+            background: #e0e0e0; 
+            border: 1pt solid #999; 
+            border-radius: 50%; 
+            overflow: hidden; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 7pt; 
+            color: #999;
+            flex-shrink: 0;
+        }
+        .photo img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+        }
+        .center { flex: 1; text-align: center; }
+        h1 { font-size: 13pt; font-weight: bold; margin-bottom: 2px; }
+        .contact { font-size: 8.5pt; line-height: 1.35; margin: 1px 0; }
+        .contact a { color: #0077b5; text-decoration: none; }
+        .title { font-size: 8.7pt; font-weight: bold; margin-top: 2px; padding-top: 2px; border-top: 0.5pt solid #ccc; }
+        section { margin-bottom: 0.08in; }
+        .section-title { font-size: 10.5pt; font-weight: bold; border-bottom: 1.5pt solid #000; padding-bottom: 1px; margin-bottom: 2px; }
+        .entry { margin-bottom: 0.01in; }
+        .entry-title { display: flex; justify-content: space-between; font-weight: bold; font-size: 9.5pt; }
+        .company { font-style: italic; font-size: 8.7pt; }
+        .date { font-style: italic; font-size: 8.5pt; }
+        .desc { margin-left: 0.06in; font-size: 9pt; line-height: 1.15; }
+        .desc li { line-height: 1.15; margin-bottom: 0; }
+        .tools { margin-top: 3px; font-size: 9pt; }
+        .skills { font-size: 8.7pt; line-height: 1.25; margin-bottom: 1px; }
+        ul { list-style-position: inside; padding: 0; margin: 0; }
+        input[type="file"] { display: none; }
+        .download-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0077b5;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            font-size: 14px;
+        }
+        .download-btn:hover {
+            background: #005a8c;
+        }
+        @media print {
+            .download-btn { display: none !important; }
+            body { font-size: 10pt; }
+            .container { padding: 0.2in; max-height: 11in; overflow: hidden; }
+            header { margin-bottom: 0.05in; }
+            section { margin-bottom: 0.05in; page-break-inside: avoid; }
+        }
+        .qr-section {
+            margin-left: 0.2in;
+            margin-top: 0.1in;
+        }
+        .qr-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .qr-code {
+            width: 80px;
+            height: 80px;
+        }
+        .qr-text {
+            font-size: 8pt;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container" id="cvContent">
+    <header>
+        <div class="photo" id="photoDiv">
+            <img id="photoImg" src="assets/profile.jpg" style="display:block;">
+        </div>
+        <div class="center">
+            <h1>Iheb NABLI</h1>
+            <div class="contact">Cergy-Pontoise, Île-de-France | <a href="mailto:ihebnabli@outlook.com">ihebnabli@outlook.com</a> | <a href="https://linkedin.com/in/iheb-nabli">linkedin.com/in/iheb-nabli</a> | <a href="https://github.com/IhebN" target="_blank" style="color: #0077b5; text-decoration: none; font-weight: 500;">🔗 github.com/IhebN</a> | <a href="https://ihebn.github.io/portfolio" target="_blank" style="color: #0077b5; text-decoration: none; font-weight: 500;">🔗 ihebn.github.io/portfolio</a> | +33 7 45 24 56 16</div>
+            <div class="title">Data Analyst & Business Intelligence Specialist • Master 1 Business Analytics & Data Science</div>
+        </div>
+        <div class="qr-section">
+            <div class="qr-container">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://IhebN.github.io/portfolio" alt="QR Code Portfolio" class="qr-code">
+                <div class="qr-text">Scan for<br>Portfolio</div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="section-title">PROFIL</div>
+        <div>Data Analyst & BI Specialist transformant des données complexes en stratégies métier impactantes. Maîtrise SQL, Power BI, Python et analyse statistique pour créer dashboards interactifs et automatiser le reporting. Orienté résultats avec capacité à communiquer insights techniques aux stakeholders non-techniques. Recherche opportunité junior / stage / alternance en Data Analytics/Business Intelligence.</div>
+    </section>
+
+    <section>
+        <div class="section-title">FORMATION</div>
+        <div class="entry">
+            <div class="entry-title"><strong>Programme Grande École - Data Science & Business Intelligence</strong><span class="date">Automne 2026</span></div>
+            <div class="company">EDC Paris Business School, Puteaux, France</div>
+            <div class="desc">Data Science • Business Intelligence • Machine Learning • Analytics • Strategic Decision Making • Business Transformation</div>
+        </div>
+        <div class="entry">
+            <div class="entry-title"><strong>Master 1 Business Analytics & Data Science</strong><span class="date">09/2024 — 06/2025</span></div>
+            <div class="company">EU Business School, Barcelone, Espagne</div>
+            <div class="desc">Advanced Statistics • Data Visualization • SQL & Database Design • Business Intelligence • Machine Learning • Recommender Systems • Product Development</div>
+        </div>
+        <div class="entry">
+            <div class="entry-title"><strong>Licence Télécommunications</strong><span class="date">09/2021 — 06/2024</span></div>
+            <div class="company">ISITCOM, Sousse, Tunisie</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-title">COMPÉTENCES TECHNIQUES</div>
+        <div class="skills"><strong>Data & BI :</strong> SQL (requêtes complexes, jointures, agrégations, window functions) • Power BI (dashboards, DAX, Power Query) • Excel avancé (tableaux croisés, formules complexes, analyse de données)</div>
+        <div class="skills"><strong>Programming :</strong> Python (Pandas, NumPy, Matplotlib, Scikit-learn) • Jupyter Notebook • Machine Learning basics</div>
+        <div class="skills"><strong>Analyse :</strong> KPIs tracking & analysis • Data Quality & Data Cleaning • Statistical Analysis • Data Visualization • Customer Segmentation • Cohort Analysis</div>
+        <div class="skills"><strong>Outils :</strong> Git/GitHub • MySQL & PostgreSQL • Tableau (basics) • Figma (prototyping) • Google Analytics</div>
+        <div class="skills"><strong>Soft Skills :</strong> Data Storytelling • Communication • Stakeholder Management • Problem-Solving • Collaboration • Business Acumen</div>
+    </section>
+
+    <section>
+        <div class="section-title">EXPÉRIENCE PROFESSIONNELLE & PROJETS DE FIN D'ÉTUDES</div>
+        <div class="entry">
+            <div class="entry-title"><strong>NomadSync — Digital Relocation Platform (Business Plan)</strong><span class="date">2025</span></div>
+            <div class="company">Projet de Fin d'Études - EU Business School, Barcelone</div>
+            <div class="desc"><ul>
+                <li>Développement d'un business plan complet pour plateforme de relocalisation IA-assistée pour étudiants internationaux, expats, digital nomads</li>
+                <li>Stratégie GTM utilisant PESTLE, SWOT, Porter's Five Forces • TAM/SAM/SOM sizing avec 3 scénarios croissance</li>
+                <li>Modèle financier : Break-even année 2 ciblé, KPIs (MAU, conversion, churn, CSAT) définis</li>
+            </ul>
+            <div class="tools"><strong>Stack :</strong> Business Strategy • PESTLE • SWOT • Porter 5 Forces • TAM/SAM/SOM • GTM • Financial Modeling • MagicPatterns</div></div>
+        </div>
+        <div class="entry">
+            <div class="entry-title"><strong>Gestion Inventaire (FYP) — Application Desktop</strong><span class="date">02/2024 — 05/2024</span></div>
+            <div class="company">Projet de Fin d'Études - ISITCOM, DRÄXLMAIER Group, Sousse, Tunisie</div>
+            <div class="desc"><ul>
+                <li>Conception et développement d'une application Java/MySQL de gestion de stock centralisée pour operations d'entrepôt chez DRÄXLMAIER Group</li>
+                <li>Implémentation du système de gestion des rôles (admin, storekeeper, manager) avec contrôle d'accès basé sur rôles</li>
+                <li>Modélisation UML (use cases, diagrammes de classes) et documentation technique complète</li>
+                <li>Optimisation du suivi des stocks via requêtes SQL et analyse des données</li>
+            </ul>
+            <div class="tools"><strong>Stack :</strong> Java • JavaFX • MySQL • SQL • Scrum • UML</div></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-title">PROJETS ACADÉMIQUES</div>
+        <div class="entry">
+            <div class="entry-title"><strong>Social Media Analytics & BI Dashboard</strong><span class="date">2024</span></div>
+            <div class="desc"><ul>
+                <li>Conception et déploiement de 2 dashboards Power BI (vue exécutive + vue marketing) pour analyse 1,000+ utilisateurs sur 7 plateformes sociales</li>
+                <li>Calcul de KPIs engagement (taux d'engagement +35%, adoption 100% en 2 semaines)</li>
+                <li>Impact : Amélioration de la stratégie de contenu et réduction du temps de reporting de 8h/semaine</li>
+            </ul>
+            <div class="tools"><strong>Stack :</strong> Power BI • Data Visualization • KPI Analysis • Marketing Analytics • Excel</div></div>
+        </div>
+        <div class="entry">
+            <div class="entry-title"><strong>Recommendation System pour Plateformes de Streaming</strong><span class="date">2024</span></div>
+            <div class="desc"><ul>
+                <li>Ingénierie d'un système hybrid recommandation sur Netflix dataset (100K+ ratings, 10K films)</li>
+                <li>Combinaison de 3 approches : Collaborative Filtering (SVD), Content-Based (TF-IDF) et K-Means clustering</li>
+                <li>Performance: RMSE 0.89, Precision@10 87%, diversité +23% vs collaborative-only</li>
+            </ul>
+            <div class="tools"><strong>Stack :</strong> Python • Pandas • Recommender Systems • SVD • TF-IDF • Cosine Similarity • K-Means • Scikit-learn</div></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-title">LANGUES</div>
+        <div class="skills"><strong>Arabe :</strong> Natif | <strong>Français :</strong> Avancé | <strong>Anglais :</strong> Avancé</div>
+    </section>
+
+    <section>
+        <div class="section-title">CERTIFICATIONS & EXTRA</div>
+        <div class="skills"><strong>Certifications :</strong> Duolingo English Test — Proficiency Avancé (reconnu internationalement)</div>
+        <div class="skills"><strong>Intérêts :</strong> Data Science • AI & ML • Digital Marketing • Consumer Trends • Tech Innovation</div>
+    </section>
+</div>
+
+<button class="download-btn" id="downloadBtn">📥 Télécharger CV en PDF</button>
+
+<script>
+document.getElementById('downloadBtn').onclick = function() {
+    const btn = document.getElementById('downloadBtn');
+    btn.textContent = '⏳ Préparation...';
+    btn.disabled = true;
+    
+    setTimeout(() => {
+        // Créer une copie du contenu pour l'impression
+        const printWindow = window.open('', '', 'height=800,width=960');
+        const cvContent = document.getElementById('cvContent').innerHTML;
+        const style = document.querySelector('style').innerHTML;
+        
+        printWindow.document.write(`
+            <!DOCTYPE html>
+            <html lang="fr">
+            <head>
+                <meta charset="UTF-8">
+                <title>CV Iheb Nabli</title>
+                <style>
+                    ${style}
+                    body { margin: 0; padding: 0; }
+                    .download-btn { display: none !important; }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    ${cvContent}
+                </div>
+                <script>
+                    window.onload = function() {
+                        setTimeout(() => {
+                            window.print();
+                        }, 500);
+                    };
+                <\/script>
+            </body>
+            </html>
+        `);
+        printWindow.document.close();
+        
+        btn.textContent = '📥 Télécharger CV en PDF';
+        btn.disabled = false;
+    }, 100);
+};
+</script>
+</body>
+</html>
