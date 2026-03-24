@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Iheb NABLI &mdash; Data & AI Analyst | Business Intelligence</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Iheb NABLI &mdash; Data &amp; AI Analyst | Business Intelligence</title>
 <meta name="description" content="Iheb NABLI &mdash; Data Analyst & Business Intelligence specialist. M1 Business Analytics & Data Science at EU Business School Barcelona. Transforming complex datasets into strategic insights."/>
 <meta name="keywords" content="Data Analyst, Business Intelligence, Power BI, Python, Machine Learning, Data Science, Barcelona, Iheb NABLI"/>
 <meta name="author" content="Iheb NABLI"/>
-<meta property="og:title" content="Iheb NABLI &mdash; Data & AI Analyst"/>
+<meta property="og:title" content="Iheb NABLI &mdash; Data &amp; AI Analyst"/>
 <meta property="og:description" content="Data Analyst & Business Intelligence specialist. Transforming complex datasets into strategic insights."/>
 <meta property="og:type" content="website"/>
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Iheb NABLI &mdash; Data & AI Analyst"/>
+<meta name="twitter:title" content="Iheb NABLI &mdash; Data &amp; AI Analyst"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -21,8 +22,8 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Iheb NABLI",
-  "url": "https://iheb-nabli.com",
-  "jobTitle": "Data Analyst & Business Intelligence Specialist",
+  "url": "https://IhebN.github.io/portfolio",
+  "jobTitle": "Data Analyst & Business Intelligence Specialist • Master 1 Business Analytics & Data Science",
   "email": "ihebnabli@outlook.com",
   "telephone": "+33 7 45 24 56 16",
   "address": {
@@ -33,10 +34,17 @@
   },
   "sameAs": [
     "https://linkedin.com/in/iheb-nabli",
-    "https://github.com/IhebN"
+    "https://github.com/IhebN",
+    "https://ihebn.github.io/portfolio"
   ],
-  "image": "https://iheb-nabli.com/assets/profile.jpg",
+  "image": "https://IhebN.github.io/portfolio/assets/profile.jpg",
   "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "EDC Paris Business School",
+      "url": "https://www.edcparis.edu",
+      "location": "Puteaux, France"
+    },
     {
       "@type": "EducationalOrganization",
       "name": "EU Business School",
@@ -357,9 +365,36 @@ section{padding:7rem 4rem}
 .clink{display:flex;align-items:center;gap:.55rem;padding:.72rem 1.6rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:100px;color:var(--white);text-decoration:none;font-size:.85rem;font-weight:600;transition:all .25s}
 .clink:hover{background:var(--teal);border-color:var(--teal);color:var(--navy);transform:translateY(-2px)}
 .clink svg{width:15px;height:15px;flex-shrink:0}
-footer{background:#060f1a;padding:1.75rem 4rem;display:flex;justify-content:space-between;align-items:center}
-footer .fc{font-size:.77rem;color:rgba(255,255,255,.3)}
-footer .fc span{color:var(--teal)}
+footer{background:#060f1a;padding:3rem 4rem;display:flex;justify-content:space-between;align-items: flex-start;gap:2rem}
+.footer-content{display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:3rem;width:100%;max-width:1200px;margin:0 auto}
+.footer-brand h3{font-family:var(--fd);font-size:1.5rem;font-weight:700;color:var(--white);margin-bottom:0.5rem}
+.footer-brand p{color:rgba(255,255,255,.6);font-size:.9rem;line-height:1.4}
+.footer-copyright{margin-top:2rem}
+.footer-copyright .fc{font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.4}
+.footer-contact h4{font-family:var(--fd);font-size:1rem;font-weight:600;color:var(--white);margin-bottom:1rem}
+.contact-item{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;color:rgba(255,255,255,.7);font-size:.9rem}
+.contact-icon{font-size:1.1rem;width:20px;text-align:center}
+.contact-item a{color:rgba(255,255,255,.7);text-decoration:none;transition:color .2s}
+.contact-item a:hover{color:var(--teal)}
+.footer-social h4{font-family:var(--fd);font-size:1rem;font-weight:600;color:var(--white);margin-bottom:1rem}
+.social-links{display:flex;flex-direction:column;gap:0.75rem}
+.social-link{display:flex;align-items:center;gap:0.75rem;color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .2s}
+.social-link:hover{color:var(--teal);transform:translateX(2px)}
+.social-link svg{flex-shrink:0}
+@media(max-width:900px){
+  footer{padding:2rem 1.5rem}
+  .footer-content{grid-template-columns:1fr;gap:2rem;text-align:center}
+  .footer-brand{text-align:center}
+  .contact-item{justify-content:center}
+  .social-links{align-items:center}
+}
+@media(max-width:768px){
+  footer{flex-direction:column;gap:1.5rem;text-align:center;padding:1.5rem}
+  .footer-content{gap:1.5rem}
+  .footer-brand h3{font-size:1.3rem}
+  .footer-contact h4,.footer-social h4{font-size:.95rem}
+}
+[data-theme="dark"] footer{background:#060D16}
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
@@ -609,6 +644,52 @@ img.lazy.loaded{opacity:1;filter:blur(0)}
 .filter-btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(11,29,46,.08)}
 [data-theme="dark"] .filter-btn{background:#141E2D;border-color:rgba(255,255,255,.12);color:#E8EEF4}
 [data-theme="dark"] .filter-btn.active{background:var(--teal);color:#0E1521}
+
+/* CV Section Styles */
+#cv{background:var(--white)}
+.cv-container{max-width:900px;margin:0 auto}
+.cv-wrapper{background:var(--cream);border-radius:24px;padding:3rem;border:1px solid var(--g1);box-shadow:0 8px 32px rgba(11,29,46,.06)}
+.cv-header{display:flex;align-items:center;gap:1.5rem;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--navy)}
+.cv-photo{width:100px;height:100px;border-radius:50%;overflow:hidden;border:3px solid var(--teal);flex-shrink:0}
+.cv-photo img{width:100%;height:100%;object-fit:cover}
+.cv-center{flex:1}
+.cv-center h1{font-family:var(--fd);font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:.5rem}
+.cv-contact{font-size:.9rem;color:var(--g7);line-height:1.6;margin-bottom:.75rem}
+.cv-contact a{color:var(--teal);text-decoration:none;font-weight:600}
+.cv-contact a:hover{text-decoration:underline}
+.cv-title{font-size:1rem;color:var(--teal);font-weight:600}
+.cv-qr{flex-shrink:0}
+.qr-container{text-align:center}
+.qr-code{width:80px;height:80px;border:2px solid var(--teal);border-radius:8px;padding:4px;background:white;margin-bottom:.5rem}
+.qr-label{font-size:.7rem;color:var(--g7);font-weight:600;line-height:1.2;text-transform:uppercase;letter-spacing:.05em}
+.cv-section{margin-bottom:2rem}
+.cv-section-title{font-family:var(--fd);font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px solid var(--teal)}
+.cv-entry{margin-bottom:1.5rem}
+.cv-entry:last-child{margin-bottom:0}
+.cv-entry-title{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.5rem;gap:1rem}
+.cv-entry-title strong{font-family:var(--fd);font-size:1rem;font-weight:700;color:var(--navy)}
+.cv-date{font-size:.85rem;color:var(--teal);font-weight:600;white-space:nowrap;flex-shrink:0}
+.cv-company{font-size:.9rem;color:var(--teal);font-weight:600;margin-bottom:.5rem}
+.cv-desc{font-size:.9rem;color:var(--g7);line-height:1.6}
+.cv-desc ul{list-style:none;padding:0;margin:.5rem 0}
+.cv-desc li{position:relative;padding-left:1.5rem;margin-bottom:.5rem;line-height:1.6}
+.cv-desc li::before{content:'▸';position:absolute;left:0;color:var(--teal);font-weight:700}
+.cv-skills{font-size:.9rem;color:var(--g7);line-height:1.6;margin-bottom:.5rem}
+.cv-skills strong{color:var(--navy)}
+.cv-tools{font-size:.85rem;color:var(--teal);margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--g1)}
+.cv-actions{display:flex;gap:1rem;margin-top:2.5rem;justify-content:center;flex-wrap:wrap}
+@media(max-width:768px){
+  .cv-wrapper{padding:2rem 1.5rem}
+  .cv-header{flex-direction:column;text-align:center;gap:1rem}
+  .cv-entry-title{flex-direction:column;gap:.25rem}
+  .cv-actions{flex-direction:column}
+  .btn-dark,.btn-out{width:100%;text-align:center}
+}
+@media print{
+  .cv-actions{display:none}
+  #cv{background:white}
+  .cv-wrapper{background:white;border:none;box-shadow:none;padding:0}
+}
 
 </style>
 </head>
@@ -1045,7 +1126,7 @@ img.lazy.loaded{opacity:1;filter:blur(0)}
       <div class="modal-hdr" style="background:linear-gradient(135deg,#162b3a,#1f4c5f)">
         <div class="modal-hdr-ico">&#128230;</div>
         <div class="modal-hdr-ttl">Final Year Project &mdash; Inventory Management Application</div>
-        <div class="modal-hdr-meta">DR&Auml;XLMAIER Group &nbsp;|&nbsp; Sousse, Tunisia &nbsp;|&nbsp; Feb&ndash;May 2024</div>
+        <div class="modal-hdr-meta">DRÄXLMAIER Group &nbsp;|&nbsp; Sousse, Tunisia &nbsp;|&nbsp; Feb&ndash;May 2024</div>
       </div>
       <div class="page-tabs" id="fypTabs">
         <button class="page-tab active" data-page="0">Overview</button>
@@ -1165,6 +1246,7 @@ img.lazy.loaded{opacity:1;filter:blur(0)}
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#education">Education</a></li>
+    <li><a href="#cv">CV</a></li>
   </ul>
   <div style="display:flex;align-items:center;gap:1rem">
     <button class="lang-toggle" id="langToggle" aria-label="Toggle language" title="EN/FR">
@@ -1188,7 +1270,7 @@ img.lazy.loaded{opacity:1;filter:blur(0)}
     <div class="hero-btns">
       <a href="mailto:ihebnabli@outlook.com" class="btn-dark">Get in touch &rarr;</a>
       <a href="https://github.com/IhebN" target="_blank" class="btn-out">GitHub &#x2197;</a>
-      <a href="assets/Iheb_Nabli_CV.pdf" target="_blank" class="btn-out" style="background:rgba(0,191,165,.1);color:var(--teal);border-color:var(--teal)">&#128212; Download CV</a>
+      <a href="#cv" class="btn-out" style="background:rgba(0,191,165,.1);color:var(--teal);border-color:var(--teal)">&#128212; Download CV</a>
     </div>
     <div class="hero-stats">
       <div><div class="stat-n">2+</div><div class="stat-l">Yrs experience</div></div>
@@ -1220,7 +1302,7 @@ img.lazy.loaded{opacity:1;filter:blur(0)}
       <p>I combine <strong>technical expertise</strong> in Python, SQL and Power BI with strong <strong>communication skills</strong> &mdash; translating raw data into strategic recommendations that bridge the gap between analysis and business decisions.</p>
       <p>Beyond data, I'm a <strong>competitive handball player</strong> of 8 years with the &Eacute;toile Sportive du Sahel &mdash; proof of my team spirit, discipline and resilience under pressure.</p>
       <div class="lang-row">
-        <span class="lang-c">&#127466;&#127468; Arabic &mdash; Native</span>
+        <span class="lang-c">&#127465;&#127466; Arabic &mdash; Native</span>
         <span class="lang-c">&#127467;&#127479; French &mdash; Advanced</span>
         <span class="lang-c">&#127468;&#127463; English &mdash; Advanced</span>
       </div>
@@ -1231,7 +1313,7 @@ img.lazy.loaded{opacity:1;filter:blur(0)}
       </div>
     </div>
     <div class="info-cards reveal d2">
-      <div class="info-card"><div class="ic-ico">&#127891;</div><div class="ic-lbl">Current Degree</div><div class="ic-val">M1 Business Analytics &amp; Data Science</div><div class="ic-sub">EU Business School, Barcelona</div></div>
+      <div class="info-card"><div class="ic-ico">&#127891;</div><div class="ic-lbl">Next Degree</div><div class="ic-val">Programme Grande École - Data Science & Business Intelligence</div><div class="ic-sub">EDC Paris Business School, Puteaux</div></div>
       <div class="info-card"><div class="ic-ico">&#128205;</div><div class="ic-lbl">Location</div><div class="ic-val">Cergy-Pontoise</div><div class="ic-sub">&Icirc;le-de-France, France</div></div>
       <div class="info-card"><div class="ic-ico">&#128188;</div><div class="ic-lbl">Seeking</div><div class="ic-val">Data / BI Analyst Role</div><div class="ic-sub">Internship or full-time</div></div>
       <div class="info-card"><div class="ic-ico">&#129338;</div><div class="ic-lbl">Beyond Data</div><div class="ic-val">8 Yrs Competitive Handball</div><div class="ic-sub">&Eacute;toile Sportive du Sahel, Tunisia</div></div>
@@ -1275,10 +1357,10 @@ img.lazy.loaded{opacity:1;filter:blur(0)}
     <div class="tl-item reveal d1">
       <div class="tl-dot-w"><div class="tl-dot">&#127981;</div></div>
       <div class="tl-box">
-        <div class="tl-head"><div class="tl-role">Final Year Project &mdash; Data Management Application</div><div class="tl-per">Feb &mdash; May 2024</div></div>
-        <div class="tl-co">DR&Auml;XLMAIER Group &middot; Sousse, Tunisia</div>
+        <div class="tl-head"><div class="tl-role">Final Year Project &mdash; Inventory Management Application</div><div class="tl-per">Feb &mdash; May 2024</div></div>
+        <div class="tl-co">DRÄXLMAIER Group &middot; Sousse, Tunisia</div>
         <ul class="tl-li">
-          <li>Designed and developed a Java/MySQL application for inventory tracking and stock management</li>
+          <li>Conception et développement d'une application Java/MySQL de gestion de stock centralisée pour operations d'entrepôt</li>
           <li>Analyzed business needs and translated them into technical specifications</li>
           <li>Created automated SQL reports to improve data reliability and operational steering</li>
           <li>Collaborated cross-functionally through testing and production deployment</li>
@@ -1377,6 +1459,12 @@ img.lazy.loaded{opacity:1;filter:blur(0)}
       <div class="edu-tops"><span class="edu-top">Data Analysis</span><span class="edu-top">Business Intelligence</span><span class="edu-top">Statistical Modeling</span><span class="edu-top">Visualization</span><span class="edu-top">Machine Learning</span></div>
     </div>
     <div class="edu-card sc">
+      <div class="edu-deg">Programme Grande École - Data Science & Business Intelligence</div>
+      <div class="edu-sch">EDC Paris Business School &middot; Puteaux, France</div>
+      <div class="edu-per">Automne 2026</div>
+      <div class="edu-tops"><span class="edu-top">Data Science</span><span class="edu-top">Business Intelligence</span><span class="edu-top">Machine Learning</span><span class="edu-top">Analytics</span></div>
+    </div>
+    <div class="edu-card">
       <div class="edu-deg">Bachelor's Degree &mdash; Telecommunications</div>
       <div class="edu-sch">ISITCOM &middot; Sousse, Tunisia</div>
       <div class="edu-per">September 2021 &mdash; June 2024</div>
@@ -1388,6 +1476,134 @@ img.lazy.loaded{opacity:1;filter:blur(0)}
     <div><div class="cert-ttl">Duolingo English Test &mdash; Certified</div><div class="cert-sub">Advanced English proficiency &middot; Internationally recognized</div></div>
   </div>
 </section>
+
+<section id="cv">
+  <div class="eyebrow">Resume</div>
+  <h2 class="sec-title">Complete <em>CV</em></h2>
+  <div class="cv-container">
+    <div class="cv-wrapper">
+      <div class="cv-header">
+        <div class="cv-photo">
+          <img src="assets/profile.jpg" alt="Iheb Nabli">
+        </div>
+        <div class="cv-center">
+          <h1>Iheb NABLI</h1>
+          <div class="cv-contact">Cergy-Pontoise, Île-de-France | <a href="mailto:ihebnabli@outlook.com">ihebnabli@outlook.com</a> | <a href="https://linkedin.com/in/iheb-nabli">linkedin.com/in/iheb-nabli</a> | +33 7 45 24 56 16</div>
+          <div class="cv-title">Data &amp; AI Analyst &amp; Business Intelligence Specialist • Master 1 Business Analytics &amp; Data Science</div>
+        </div>
+        <div class="cv-qr">
+          <div class="qr-container">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://IhebN.github.io/portfolio" alt="QR Code Portfolio" class="qr-code">
+            <div class="qr-label">Scan for<br>Portfolio</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-section-title">PROFIL</div>
+        <div class="cv-content">Data Analyst & BI Specialist transformant des données complexes en stratégies métier impactantes. Maîtrise SQL, Power BI, Python et analyse statistique pour créer dashboards interactifs et automatiser le reporting. Orienté résultats avec capacité à communiquer insights techniques aux stakeholders non-techniques. Recherche opportunité stage ou CDI en Data Analytics/Business Intelligence.</div>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-section-title">FORMATION</div>
+        <div class="cv-entry">
+          <div class="cv-entry-title"><strong>Programme Grande École - Data Science & Business Intelligence</strong><span class="cv-date">Automne 2026</span></div>
+          <div class="cv-company">EDC Paris Business School, Puteaux, France</div>
+          <div class="cv-desc">Data Science • Business Intelligence • Machine Learning • Analytics • Strategic Decision Making • Business Transformation</div>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-title"><strong>Master 1 Business Analytics & Data Science</strong><span class="cv-date">09/2024 — 06/2025</span></div>
+          <div class="cv-company">EU Business School, Barcelone, Espagne</div>
+          <div class="cv-desc">Advanced Statistics • Data Visualization • SQL & Database Design • Business Intelligence • Machine Learning • Recommender Systems • Product Development</div>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-title"><strong>Licence Télécommunications</strong><span class="cv-date">09/2021 — 06/2024</span></div>
+          <div class="cv-company">ISITCOM, Sousse, Tunisie</div>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-section-title">COMPÉTENCES TECHNIQUES</div>
+        <div class="cv-skills"><strong>Data & BI :</strong> SQL (requêtes complexes, jointures, agrégations, window functions) • Power BI (dashboards, DAX, Power Query) • Excel avancé (tableaux croisés, formules complexes, analyse de données)</div>
+        <div class="cv-skills"><strong>Programming :</strong> Python (Pandas, NumPy, Matplotlib, Scikit-learn) • Jupyter Notebook • Machine Learning basics</div>
+        <div class="cv-skills"><strong>Analyse :</strong> KPIs tracking & analysis • Data Quality & Data Cleaning • Statistical Analysis • Data Visualization • Customer Segmentation • Cohort Analysis</div>
+        <div class="cv-skills"><strong>Outils :</strong> Git/GitHub • MySQL & PostgreSQL • Tableau (basics) • Figma (prototyping) • Google Analytics</div>
+        <div class="cv-skills"><strong>Soft Skills :</strong> Data Storytelling • Communication • Stakeholder Management • Problem-Solving • Collaboration • Business Acumen</div>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-section-title">EXPÉRIENCE PROFESSIONNELLE</div>
+        <div class="cv-entry">
+          <div class="cv-entry-title"><strong>NomadSync — Digital Relocation Platform (Business Plan)</strong><span class="cv-date">2025</span></div>
+          <div class="cv-company">Projet de Fin d'Études - EU Business School, Barcelone</div>
+          <div class="cv-desc">
+            <ul>
+              <li>Développement d'un business plan complet pour plateforme de relocalisation IA-assistée pour étudiants internationaux, expats, digital nomads</li>
+              <li>Stratégie GTM utilisant PESTLE, SWOT, Porter's Five Forces • TAM/SAM/SOM sizing avec 3 scénarios croissance</li>
+              <li>Modèle financier : Break-even année 2 ciblé, KPIs (MAU, conversion, churn, CSAT) définis</li>
+            </ul>
+          </div>
+          <div class="cv-tools"><strong>Stack :</strong> Business Strategy • PESTLE • SWOT • Porter 5 Forces • TAM/SAM/SOM • GTM • Financial Modeling • MagicPatterns</div>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-title"><strong>Projet de Fin d'Études - Gestion Inventaire (FYP)</strong><span class="cv-date">02/2024 — 05/2024</span></div>
+          <div class="cv-company">DRÄXLMAIER Group, Sousse, Tunisie</div>
+          <div class="cv-desc">
+            <ul>
+              <li>Conception et développement d'une application Java/MySQL de gestion de stock centralisée pour operations d'entrepôt</li>
+              <li>Implémentation du système de gestion des rôles (admin, storekeeper, manager) avec contrôle d'accès basé sur rôles</li>
+              <li>Modélisation UML (use cases, diagrammes de classes) et documentation technique complète</li>
+            </ul>
+          </div>
+          <div class="cv-tools"><strong>Stack :</strong> Java • JavaFX • MySQL • SQL • Scrum • UML</div>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-section-title">PROJETS ACADÉMIQUES</div>
+        <div class="cv-entry">
+          <div class="cv-entry-title"><strong>Social Media Analytics & BI Dashboard</strong><span class="cv-date">2024</span></div>
+          <div class="cv-desc">
+            <ul>
+              <li>Conception et déploiement de 2 dashboards Power BI (vue exécutive + vue marketing) pour analyse 1,000+ utilisateurs sur 7 plateformes sociales</li>
+              <li>Calcul de KPIs engagement (taux d'engagement +35%, adoption 100% en 2 semaines)</li>
+              <li>Impact : Amélioration de la stratégie de contenu et réduction du temps de reporting de 8h/semaine</li>
+            </ul>
+          </div>
+          <div class="cv-tools"><strong>Stack :</strong> Power BI • Data Visualization • KPI Analysis • Marketing Analytics • Excel</div>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-title"><strong>Recommendation System pour Plateformes de Streaming</strong><span class="cv-date">2024</span></div>
+          <div class="cv-desc">
+            <ul>
+              <li>Ingénierie d'un système hybrid recommandation sur Netflix dataset (100K+ ratings, 10K films)</li>
+              <li>Combinaison de 3 approches : Collaborative Filtering (SVD), Content-Based (TF-IDF) et K-Means clustering</li>
+              <li>Performance: RMSE 0.89, Precision@10 87%, diversité +23% vs collaborative-only</li>
+            </ul>
+          </div>
+          <div class="cv-tools"><strong>Stack :</strong> Python • Pandas • Recommender Systems • SVD • TF-IDF • Cosine Similarity • K-Means • Scikit-learn</div>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-section-title">LANGUES</div>
+        <div class="cv-skills">&#127465;&#127466; <strong>Arabe :</strong> Natif | &#127467;&#127479; <strong>Français :</strong> Avancé | &#127468;&#127463; <strong>Anglais :</strong> Avancé (écrit et oral)</div>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-section-title">CERTIFICATIONS & EXTRA</div>
+        <div class="cv-skills"><strong>Certifications :</strong> Duolingo English Test — Proficiency Avancé (reconnu internationalement)</div>
+        <div class="cv-skills"><strong>Intérêts :</strong> Data Science • AI & ML • Digital Marketing • Consumer Trends • Tech Innovation</div>
+      </div>
+    </div>
+    
+    <div class="cv-actions">
+      <button class="btn-dark" id="downloadCVBtn">📥 Télécharger CV en PDF</button>
+      <a href="cv.html" target="_blank" class="btn-out">Voir CV plein écran ↗</a>
+    </div>
+  </div>
+</section>
+
 <section id="contact">
   <div class="ct-in">
     <div class="eyebrow" data-i18n="contact-eyebrow">Get in touch</div>
@@ -1429,8 +1645,56 @@ img.lazy.loaded{opacity:1;filter:blur(0)}
   </div>
 </section>
 <footer>
-  <div class="fc">&copy; 2025 Iheb NABLI &middot; All rights reserved</div>
-  <div class="fc">Built with <span>&hearts;</span> &middot; Cergy-Pontoise, France</div>
+  <div class="footer-content">
+    <div class="footer-left">
+      <div class="footer-brand">
+        <h3>Iheb NABLI</h3>
+        <p>Data &amp; AI Analyst &amp; Business Intelligence Specialist</p>
+      </div>
+      <div class="footer-copyright">
+        <div class="fc">&copy; 2025 Iheb NABLI</div>
+        <div class="fc">All rights reserved</div>
+      </div>
+    </div>
+    
+    <div class="footer-center">
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <a href="mailto:ihebnabli@outlook.com">ihebnabli@outlook.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <a href="tel:+33745245616">+33 7 45 24 56 16</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          Cergy-Pontoise, France
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-right">
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/iheb-nabli" target="_blank" class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/IhebN" target="_blank" class="social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function(){
@@ -1584,7 +1848,7 @@ const translations = {
     
     // Hero section
     'Available for opportunities': 'Available for opportunities',
-    'Data Analyst & Business Intelligence specialist — transforming complex datasets into clear, strategic insights. M1 Business Analytics & Data Science, EU Business School Barcelona.': 'Data Analyst & Business Intelligence specialist — transforming complex datasets into clear, strategic insights. M1 Business Analytics & Data Science, EU Business School Barcelona.',
+    'Data & AI Analyst & Business Intelligence specialist — transforming complex datasets into clear, strategic insights. M1 Business Analytics & Data Science, EU Business School Barcelona.': 'Data & AI Analyst & Business Intelligence specialist — transforming complex datasets into clear, strategic insights. M1 Business Analytics & Data Science, EU Business School Barcelona.',
     'Get in touch →': 'Get in touch →',
     'GitHub ↗': 'GitHub ↗',
     'Download CV': 'Download CV',
@@ -1647,7 +1911,7 @@ const translations = {
     
     // Hero section
     'Available for opportunities': 'Disponible pour des opportunités',
-    'Data Analyst & Business Intelligence specialist — transforming complex datasets into clear, strategic insights. M1 Business Analytics & Data Science, EU Business School Barcelona.': 'Spécialiste en Data Analytics & Business Intelligence — transformant les données complexes en insights stratégiques clairs. M1 Business Analytics & Data Science, EU Business School Barcelona.',
+    'Data & AI Analyst & Business Intelligence specialist — transforming complex datasets into clear, strategic insights. M1 Business Analytics & Data Science, EU Business School Barcelona.': 'Spécialiste en Data & AI Analytics & Business Intelligence — transformant les données complexes en insights stratégiques clairs. M1 Business Analytics & Data Science, EU Business School Barcelona.',
     'Get in touch →': 'Me contacter →',
     'GitHub ↗': 'GitHub ↗',
     'Download CV': 'Télécharger CV',
@@ -2051,5 +2315,20 @@ if('IntersectionObserver' in window){
     });
   }
 })();
+
+// CV Download functionality
+document.getElementById('downloadCVBtn')?.addEventListener('click', function() {
+  const btn = document.getElementById('downloadCVBtn');
+  btn.textContent = '⏳ Préparation...';
+  btn.disabled = true;
+  
+  setTimeout(() => {
+    // Open the standalone CV page in a new window for printing
+    const printWindow = window.open('cv.html', '', 'height=800,width=960');
+    
+    btn.textContent = '📥 Télécharger CV en PDF';
+    btn.disabled = false;
+  }, 100);
+});
 
 </script>
